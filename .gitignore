@@ -1,0 +1,14 @@
+alembic/versions/*.py
+
+.env
+env.py
+alembic.ini
+
+*.db
+
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+venv/
