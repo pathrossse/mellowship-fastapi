@@ -26,7 +26,7 @@ def create(request: schemas.Todo, db: Session = Depends(get_db), current_user: m
         deadline=request.deadline,
         done=request.done,
         user_id=current_user.id 
-       
+    )
     db.add(new_todo)
     db.commit()
     db.refresh(new_todo)
