@@ -3,7 +3,9 @@ from jose import JWTError, jwt
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
-from . import schemas, models
+
+from . import schemas
+from .db import models
 from .database import get_db
 
 SECRET_KEY = "YOUR_SECRET_KEY_HERE"  
